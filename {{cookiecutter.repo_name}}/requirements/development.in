@@ -1,0 +1,11 @@
+-r ./requirements.txt
+
+bumpversion
+coverage
+invoke
+pytest
+pytest-cov
+pytest-flakes
+sphinx
+sphinxcontrib-napoleon
+wheel>=0.23.0
