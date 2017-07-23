@@ -14,7 +14,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 
-def parse_reqs(req_path='./requirements.txt'):
+def parse_reqs(req_path='./requirements/requirements.txt'):
     """Recursively parse requirements from nested pip files."""
     install_requires = []
     with codecs.open(req_path, 'r') as handle:

@@ -52,8 +52,6 @@ If you are requesting a feature:
 ## Get Started!
 Ready to contribute? Here's how to set up `{{ cookiecutter.project_name }}` for local development.
 
-> Over time my ambition is to provide a reproducable and automated setup through Vagrant.
-
 1. Fork the [{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}][repo] repo on GitHub
 
 2. Clone your fork locally:
@@ -67,7 +65,8 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.project_name }}` for 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development:
 
   ```bash
-  $ mkvirtualenv {{ cookiecutter.repo_name }}
+  $ python -m venv venv
+  $ source venv/bin/activate
   $ cd {{ cookiecutter.repo_name }}/
   $ pip install --editable .
   ```

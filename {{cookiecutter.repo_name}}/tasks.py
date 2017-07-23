@@ -8,7 +8,7 @@ from invoke.util import log
 
 @task
 def clean():
-    """clean - remove build artifacts."""
+    '''clean - remove build artifacts.'''
     run('rm -rf build/')
     run('rm -rf dist/')
     run('rm -rf {{ cookiecutter.repo_name|replace('-', '_') }}.egg-info')
@@ -22,20 +22,20 @@ def clean():
 
 @task
 def test():
-    """test - run the test runner."""
+    '''test - run the test runner.'''
     run('py.test --flakes --cov-report html --cov {{ cookiecutter.repo_name|replace('-', '_') }} tests/', pty=True)
     run('open htmlcov/index.html')
 
 
 @task
 def lint():
-    """lint - check style with flake8."""
+    '''lint - check style with flake8.'''
     run('flake8 {{ cookiecutter.repo_name|replace('-', '_') }} tests')
 
 
 @task(clean)
 def publish():
-    """publish - package and upload a release to the cheeseshop."""
+    '''publish - package and upload a release to the cheeseshop.'''
     run('python setup.py sdist upload', pty=True)
     run('python setup.py bdist_wheel upload', pty=True)
 
