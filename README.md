@@ -2,6 +2,8 @@
 
 Cookiecutter template for bleeding edge Python development. See [@audreyr/cookiecutter][cookiecutter].
 
+Forked from Maolir's customizations to Robin Andeer's PyVanguard template.  See [@maolir/cookiecutter-pyvanguard][pyvanguard] & [@robinandeer/cookiecutter-pyvanguard][pyvanguard].
+
 The template aspires adoption of new and exciting developer tools. Focus is on automation and keeping your repo DRY. Whenever justifiable, new and Python-native is preferred over "tried and true".
 
 ### Automation
@@ -24,18 +26,17 @@ Embrace conventions. Don't fret details when you don't have to. Make it easy for
 ### Comparmentalization
 Level out inconsistencies between platforms. Virtualize. Simplify development. Inspire experimentation.
 
-- [conda][conda] as an optional, improved "virtualenv" replacement
+- (future) [Poetry][poetry] for virtualenv and dependency management.
 - [Vagrant][vagrant] to define and share development environments, provisioned by [Ansible][ansible].
 
-### Python 2 vs. 3
-Python 2.7.x isn't bleeding edge but it would be crazy to not officially support it. The compromise is developing for Python 3 first and ensure backwards compatability through a lightweight ``_compat.py`` module.
-
+### Python 2 support excised
+It's 2020, Python 2.x is no longer supported.
 
 ## Usage
 In your projects folder, scaffold a brand new Python project:
 
 ```bash
-$ cookiecutter https://github.com/robinandeer/cookiecutter-pyvanguard.git
+$ cookiecutter https://github.com/jwiede/cookiecutter-pyvanguard.git
 ```
 
 Then:
