@@ -2,7 +2,7 @@
 
 Cookiecutter template for bleeding edge Python development. See [@audreyr/cookiecutter][cookiecutter].
 
-Forked from Maolir's customizations to Robin Andeer's PyVanguard template.  See [@maolir/cookiecutter-pyvanguard][pyvanguard] & [@robinandeer/cookiecutter-pyvanguard][pyvanguard].
+Forked from Maolir's customizations to Robin Andeer's PyVanguard template.  See [@maolir/cookiecutter-pyvanguard][maolir_pyvanguard] & [@robinandeer/cookiecutter-pyvanguard][pyvanguard].
 
 The template aspires adoption of new and exciting developer tools. Focus is on automation and keeping your repo DRY. Whenever justifiable, new and Python-native is preferred over "tried and true".
 
@@ -75,10 +75,10 @@ I also accept pull requests on this repository provided they are small, atomic, 
 
 [ansible]: http://www.ansible.com/home
 [bumpversion]: https://github.com/peritus/bumpversion
-[conda]: http://conda.pydata.org/docs/
 [cookiecutter]: https://github.com/audreyr/cookiecutter
 [coveralls]: https://coveralls.io/
 [editorconfig]: http://editorconfig.org/
+[pyvanguard]: https://github.com/robinandeer/cookiecutter-pyvanguard
 [family-tree]: https://github.com/robinandeer/cookiecutter-pyvanguard/network/members
 [github-comparison]: https://github.com/tony/cookiecutter-pypackage/compare/robinandeer:master...master
 [inspiration]: http://thenounproject.com/term/cutting-edge/14935/
@@ -90,3 +90,6 @@ I also accept pull requests on this repository provided they are small, atomic, 
 [travis]: https://travis-ci.org/
 [vagrant]: http://www.vagrantup.com/
 [wheel]: http://wheel.readthedocs.org/en/latest/
+[maolir_pyvanguard]: https://github.com/maolir/cookiecutter-pyvanguard
+[poetry]: https://python-poetry.org/
+
